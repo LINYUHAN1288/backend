@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 	"strings"
-	"github.com/astaxie/beego"
+	//"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -13,7 +13,7 @@ import (
 
 func init() {
 
-	orm.RegisterDataBase("default", "mysql", beego.AppConfig.String("sqlconn"))
+	//orm.RegisterDataBase("default", "mysql", beego.AppConfig.String("sqlconn"))
 	orm.RegisterModel(new(User))
 }
 

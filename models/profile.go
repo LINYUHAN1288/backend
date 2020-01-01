@@ -6,14 +6,14 @@ import (
 	"reflect"
 	"strings"
 	"time"
-	"github.com/astaxie/beego"
+	//"github.com/astaxie/beego"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/astaxie/beego/orm"
 )
 
 
 func init() {
-	orm.RegisterDataBase("default", "mysql", beego.AppConfig.String("sqlconn"))
+	//orm.RegisterDataBase("default", "mysql", beego.AppConfig.String("sqlconn"))
 	orm.RegisterModel(new(Profile))
 }
 
